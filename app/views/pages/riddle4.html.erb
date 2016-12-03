@@ -1,0 +1,50 @@
+<style>
+body{
+    background: #D49100;
+}
+</style>
+
+
+<div class = "main">
+    <div class = "container">
+
+
+
+    <div class = "row riddle riddle4">
+    	<div class = "col-md-12 col-sm-12 col-sx-12">
+
+	    		<div><span class = "clue">A heart of chrome, a dress of red.</span></div>
+	    		<div><span class = "clue">Illusion, real, good, evil –</span></div>
+	    		<div><span class = "clue">Motives unknown ‘til all is said.</span></div>
+				<br>
+	    		<div><span class = "clue">Among the stars, she whispered him,</span></div>
+	    		<div><span class = "clue">"I am an angel,"</span></div>
+	    		<div><span class = "clue">But actions told a tale of sin.</span></div>
+	    		<br>
+	    		<div><span class = "clue">Infiltrate, circumvent, destroy.</span></div>
+	    		<div><span class = "clue">She hid, one of many,</span></div>
+	    		<div><span class = "clue">Til the time was right for her ploy.</span></div>
+
+    	</div>
+	</div>
+
+    <div class = "row answer-section">
+    	<div class = "col-md-12 col-sm-12 col-sx-12">
+	        <%= form_tag('/pages', :url => { :action => "submit" }, :class => 'riddle4') do %>
+	            <%= hidden_field_tag "riddle", 4 %>
+	            <%= text_field_tag "1", nil, class: "my-num", maxlength: 1 %>
+	            <%= text_field_tag "2", nil, class: "my-num", maxlength: 1 %>
+	            <%= text_field_tag "3", nil, class: "my-num last-num", maxlength: 1 %>
+	        <br>
+	        <br>
+	        <br>
+	            
+	            <%= submit_tag "Submit", class: "submit-btn" %>
+	            
+
+	        <% end %>
+    	</div>
+
+
+
+</div>

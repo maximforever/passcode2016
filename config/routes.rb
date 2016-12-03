@@ -5,6 +5,27 @@ Rails.application.routes.draw do
   post '/pages' => 'pages#submit'
   get '/secret' => 'pages#secret'
 
+  get 'riddle1' => 'pages#riddle1'
+  get 'riddle2' => 'pages#riddle2'
+  get 'riddle3' => 'pages#riddle3'
+  get 'riddle4' => 'pages#riddle4'
+  get 'riddle5' => 'pages#riddle5'
+  get 'riddle6' => 'pages#riddle6'
+  get 'victory' => 'pages#victory'
+
+
+  get 'win1' => 'pages#win1'
+  get 'win2' => 'pages#win2'
+  get 'win3' => 'pages#win3'
+  get 'win4' => 'pages#win4'
+  get 'win5' => 'pages#win5'
+  get 'win6' => 'pages#win6'
+
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

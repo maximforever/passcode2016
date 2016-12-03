@@ -7,21 +7,11 @@ body{
 
 <div class = "main">
     <div class = "container">
+    <h2>Hello, James. </h2>
+    <h2>We had so much fun last year, I decided to come back.</h2>
+    <h2> Let's play a little game together.</h2>
 
-    <h2>Guess wisely.</h2>
-
-        <%= form_tag('/pages', :url => { :action => "submit" }) do %>
-
-            <%= number_field_tag "1", nil, class: "my-num", maxlength: 1 %>
-            <%= number_field_tag "2", nil, class: "my-num", maxlength: 1 %>
-            <%= number_field_tag "3", nil, class: "my-num", maxlength: 1 %>
-            <%= number_field_tag "4", nil, class: "my-num last-num", maxlength: 1 %>
-        <br>
-        <br>
-        <br>
-            <%= submit_tag "Submit", class: "submit-btn" %>
-
-        <% end %>
+        <a href = "/riddle1"><button class = "submit-btn">Start</button></a>
         
     </div>
 </div>
